@@ -1,0 +1,60 @@
+// Here you can add other styles
+.lpmLogo {
+	height: 50px;
+	width: 100px;
+}
+.card-appli {
+	height: 100px;
+	width: 200px;
+}
+.arrow-direction {
+	color: black;
+}
+.indicateurHeader{
+	height: 50px;
+	color: blue;
+	background-color: white;
+	border-radius: 10px;
+	font-weight: bold;
+  	border: 3px solid blue;
+	text-align: center;
+
+	&-text{
+		font-size: 20px;
+    	position: absolute;
+    	right: 35%;
+    	top: 10%;
+	}
+
+	&-img{
+		height: auto;
+    	width: 45px;
+    	position: absolute;
+    	left: 87%;
+	}
+}
+.indicateurBody{
+	height: 500px;
+	width: 50px;
+	background-color: white;
+	border-right: 2px solid blue;
+	border-left: 2px solid blue;
+}
+.indicateurData{
+	height: 50px;
+	width: 200px;
+	color: darkblue;
+	background-color: lightblue;
+	border-radius: 10px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+.application-dropdown{
+	float: right;
+	margin-right: 50px;
+	color: black;
+	font-weight: bold;
+}
+.m-1{
+	height: 50px;
+}
