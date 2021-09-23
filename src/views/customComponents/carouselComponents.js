@@ -25,8 +25,10 @@ const CarouselComponents = () => {
                 <CContainer>
                     <CRow>
                         <CCol lg="4" className="indicateurHeader" >
-                            <span className="indicateurHeader-text">Facturation</span> 
-                            <CImg src="avatars/calImg.png" alt="" className="indicateurHeader-img"/>
+                            <span className="indicateurHeader-text" >  Facturation</span> 
+                            {/* <CImg src="avatars/calImg.png" alt="" className="indicateurHeader-img"/> */}
+                            
+                           
                         </CCol>                      
                         <CCol md="4" className="indicateurHeader"><span className="indicateurHeader-text"> Paiement </span></CCol>
                         <CCol sm="4" className="indicateurHeader"><span className="indicateurHeader-text"> CHORUS  </span></CCol>

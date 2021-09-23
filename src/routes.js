@@ -35,11 +35,6 @@ const Typography = React.lazy(() => import('./views/theme/typography/Typography'
 const Widgets = React.lazy(() => import('./views/widgets/Widgets'));
 const Users = React.lazy(() => import('./views/users/Users'));
 const User = React.lazy(() => import('./views/users/User'));
-const repartionNotes = React.lazy(() => import('./views/notePayeur/repartionNotes'));
-const traitementNotes = React.lazy(() => import('./views/notePayeur/traitementNotes'));
-const modeCalcul = React.lazy(() => import('./views/notePayeur/modeCalcul'));
-const config  = React.lazy(() => import('./views/notePayeur/config'));
-const repartionClients = React.lazy(() => import('./views/notePayeur/repartionclients')); 
 
 const routes = [
   { path: '/', exact: true, name: 'Home' },
@@ -79,13 +74,7 @@ const routes = [
   { path: '/notifications/toaster', name: 'Toaster', component: Toaster },
   { path: '/widgets', name: 'Widgets', component: Widgets },
   { path: '/users', exact: true,  name: 'Users', component: Users },
-  { path: '/users/:id', exact: true, name: 'User Details', component: User },
-  { path: '/notePayeur', name: 'Note Payeur', component: repartionNotes, exact: true },
-  { path: '/notePayeur/repartionNotes', name: 'Repartion Notes', component: repartionNotes },
-  { path: '/notePayeur/traitementNotes', name: 'Traitement Notes', component: traitementNotes },
-  { path: '/notePayeur/modeCalcul', name: 'Mode de Calcul', component: modeCalcul },
-  { path: '/notePayeur/config', name: 'Configuration', component: config },
-   { path: '/notePayeur/repartionClients', name: 'Repartion Clients', component: repartionClients } 
+  { path: '/users/:id', exact: true, name: 'User Details', component: User }
 ];
 
 export default routes;

@@ -39,10 +39,13 @@
 	background-color: white;
 	border-right: 2px solid blue;
 	border-left: 2px solid blue;
+	border-bottom: 2px solid blue;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 .indicateurData{
 	height: 50px;
-	width: 200px;
+	width: 250px !important;
 	color: darkblue;
 	background-color: lightblue;
 	border-radius: 10px;
@@ -57,4 +60,18 @@
 }
 .m-1{
 	height: 50px;
+}
+.badgeColor{
+	&-OK{
+		color: green;
+	}
+	&-Warning{
+		color: orange;
+	}
+	&-Error{
+		color: red;
+	}
+	&-Info{
+		color: blue
+	}
 }
