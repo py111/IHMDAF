@@ -36,7 +36,7 @@ const TheHeader = () => {
   }
 
   return (
-    <CHeader withSubheader>
+    <CHeader className="badgeColor-headerbackGround" withSubheader>
       {/* <CToggler
         inHeader
         className="ml-md-3 d-lg-none"
@@ -71,10 +71,11 @@ const TheHeader = () => {
         {/* <TheHeaderDropdown/> */}
       </CHeaderNav>
       <CImg src="avatars/Logo-LPM.png" alt="" className="lpmLogo"/>
-      <CBreadcrumbRouter 
+      <div className ="badgeColor-headerTitle"> IHM DAF</div>
+      {/* <CBreadcrumbRouter 
           className="border-0 c-subheader-nav m-0 px-0 px-md-3" 
           routes={routes} 
-        /> 
+        />  */}
           <div className="d-md-down-none mfe-2 c-subheader-nav">
             {/* <CLink className="c-subheader-nav-link"href="#">
               <CIcon name="cil-speech" alt="Settings" />

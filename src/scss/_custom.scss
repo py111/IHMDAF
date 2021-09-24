@@ -1,6 +1,6 @@
 // Here you can add other styles
 .lpmLogo {
-	height: 50px;
+	height: 60px;
 	width: 100px;
 }
 .card-appli {
@@ -8,16 +8,35 @@
 	width: 200px;
 }
 .arrow-direction {
-	color: black;
+	background-color: lightgrey !important;
+	width : 20px;
+	height: 20px;
+	margin-top: 300px;
+	
+	&-left{
+	margin-left: 40px;
+	}
+	&-right{
+		margin-right: 40px;
+	}
+}
+.header{
+	color: #00277e;
+	// background-color: #00277e;
+	font-weight: bold;
+	text-align: left;
+	border-radius: 10px;
+	font-size: 30px;
 }
 .indicateurHeader{
 	height: 50px;
-	color: blue;
-	background-color: white;
-	border-radius: 10px;
+	color: #00277e;
+	background-color: #F9E225;
+	border-radius: 20px;
 	font-weight: bold;
-  	border: 3px solid blue;
+  	// border: 3px solid yellow;
 	text-align: center;
+	font-family: Arial, sans-serif;
 
 	&-text{
 		font-size: 20px;
@@ -27,30 +46,31 @@
 	}
 
 	&-img{
-		height: auto;
-    	width: 45px;
+		height: 50px !important;
+    	width: 40px !important;
     	position: absolute;
-    	left: 87%;
+    	left: 90%;
 	}
 }
 .indicateurBody{
 	height: 500px;
 	width: 50px;
 	background-color: white;
-	border-right: 2px solid blue;
-	border-left: 2px solid blue;
-	border-bottom: 2px solid blue;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
+	// border-right: 2px solid #F9E225;
+	// border-left: 2px solid #F9E225;
+	// border-bottom: 2px solid blue;
+	// border-bottom-left-radius: 10px;
+	// border-bottom-right-radius: 10px;
 }
 .indicateurData{
 	height: 50px;
 	width: 250px !important;
-	color: darkblue;
-	background-color: lightblue;
+	color: white;
+	background-color:lightseagreen;
 	border-radius: 10px;
 	font-weight: bold;
 	margin-top: 20px;
+	font-family: Arial, sans-serif;
 }
 .application-dropdown{
 	float: right;
@@ -73,5 +93,20 @@
 	}
 	&-Info{
 		color: blue
+	}
+	&-bodybackGround{
+		background-color: white;
+	}
+	&-headerbackGround{
+		background-color: #00277e;
+	}
+	&-headerTitle{
+		color: white;
+		font-weight: bold;
+		font-family: Arial, sans-serif;
+		font-size: 20px;
+    	position: absolute;
+    	right: 50%;
+    	top: 25%;
 	}
 }

@@ -12,12 +12,21 @@ import {
   CImg
 } from '@coreui/react'
 import IndicateurFacturation from './indicateurFacturation'
+import CIcon from '@coreui/icons-react'
 
-const CarouselComponents = () => {
+const CarouselComponents = (props) => {
   const [activeIndex] = useState(0)
+  const {
+    applicationIndex
+  } = props; 
 
   return (
     <CCol sm={12}>
+    <CRow>
+      <CCol sm="12" className="header"> Dans l'application : {applicationIndex}</CCol>
+    </CRow>
+    <CRow>
+    </CRow>
     <CCarousel activeIndex={activeIndex} dark={true}>
         <CCarouselIndicators/>
         <CCarouselInner>
@@ -27,11 +36,11 @@ const CarouselComponents = () => {
                         <CCol lg="4" className="indicateurHeader" >
                             <span className="indicateurHeader-text" >  Facturation</span> 
                             {/* <CImg src="avatars/calImg.png" alt="" className="indicateurHeader-img"/> */}
-                            
-                           
-                        </CCol>                      
-                        <CCol md="4" className="indicateurHeader"><span className="indicateurHeader-text"> Paiement </span></CCol>
-                        <CCol sm="4" className="indicateurHeader"><span className="indicateurHeader-text"> CHORUS  </span></CCol>
+                            <CIcon name="cil-calculator" alt="" className="indicateurHeader-img"/></CCol>                      
+                        <CCol md="4" className="indicateurHeader"><span className="indicateurHeader-text"> Paiement </span>
+                            <CIcon name="cil-euro" alt="" className="indicateurHeader-img"/></CCol>
+                        <CCol sm="4" className="indicateurHeader"><span className="indicateurHeader-text"> CHORUS  </span>
+                            <CIcon name="cil-graph" alt="" className="indicateurHeader-img"/></CCol>
                     </CRow>
                     <CRow>
                         <CCol lg="4" className="indicateurBody">
@@ -41,7 +50,7 @@ const CarouselComponents = () => {
                         <CCol lg="4" className="indicateurBody"></CCol>
                     </CRow>
                 </CContainer>
-            <CCarouselCaption><h3>Slide 1</h3><p>Slide 1</p></CCarouselCaption>
+            {/* <CCarouselCaption><h3>Slide 1</h3><p>Slide 1</p></CCarouselCaption> */}
             </CCarouselItem>
             <CCarouselItem>
                 <CContainer>
@@ -56,11 +65,11 @@ const CarouselComponents = () => {
                         <CCol lg="4" className="indicateurBody"></CCol>
                     </CRow>
                 </CContainer>
-            <CCarouselCaption><h3>Slide 2</h3><p>Slide 2</p></CCarouselCaption>
+            {/* <CCarouselCaption><h3>Slide 2</h3><p>Slide 2</p></CCarouselCaption> */}
             </CCarouselItem>
         </CCarouselInner>
-        <CCarouselControl direction="prev" className="arrow-direction"/>
-        <CCarouselControl direction="next" className="arrow-direction"/>
+        <CCarouselControl direction="prev" className="arrow-direction arrow-direction-left"/>
+        <CCarouselControl direction="next" className="arrow-direction arrow-direction-right"/>
     </CCarousel>
     </CCol>
   )

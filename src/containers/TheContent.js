@@ -17,7 +17,7 @@ const loading = (
 
 const TheContent = () => {
   return (
-    <main className="c-main">
+    <main className="c-main badgeColor-bodybackGround">
       <CContainer fluid>
         <Suspense fallback={loading}>
           <Switch>
