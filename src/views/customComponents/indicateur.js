@@ -49,7 +49,7 @@ const Indicateur = (props) => {
       //add more conditions
     });
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []); // Empty array of dependency makes it equivalent to componentDidMount
+  }, [flag]); // Empty array of dependency makes it equivalent to componentDidMount
 
   return (
     <Fragment>

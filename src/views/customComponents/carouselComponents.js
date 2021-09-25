@@ -21,7 +21,7 @@ const CarouselComponents = (props) => {
   return (
     <CCol sm={12}>
     <CRow>
-      <CCol sm="12" className="header"> Dans l'application : {applicationIndex}</CCol>
+      <CCol sm="12" className="header"> Dans l'application : BSCS {applicationIndex}</CCol>
     </CRow>
     <CRow>
     </CRow>
@@ -51,9 +51,15 @@ const CarouselComponents = (props) => {
             <CCarouselItem>
                 <CContainer>
                     <CRow>
-                        <CCol lg="4" className="indicateurHeader"><span className="indicateurHeader-text"> REQUISITION </span></CCol>
-                        <CCol md="4" className="indicateurHeader"><span className="indicateurHeader-text">  PDR </span></CCol>
-                        <CCol sm="4" className="indicateurHeader"><span className="indicateurHeader-text"> NOTE PAYEUR </span></CCol>
+                        <CCol lg="4" className="indicateurHeader">
+                            <span className="indicateurHeader-text"> REQUISITION </span>
+                            <CIcon name="cil-lock-locked" alt="" className="indicateurHeader-img"/></CCol>
+                        <CCol md="4" className="indicateurHeader">
+                            <span className="indicateurHeader-text">  PDR </span>
+                            <CIcon name="cil-bell" alt="" className="indicateurHeader-img"/></CCol>
+                        <CCol sm="4" className="indicateurHeader">
+                            <span className="indicateurHeader-text"> NOTE PAYEUR </span>
+                            <CIcon name="cil-envelope-open" alt="" className="indicateurHeader-img"/></CCol>
                     </CRow>
                     <CRow>
                         <CCol lg="4" className="indicateurBody"></CCol>
