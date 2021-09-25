@@ -8,7 +8,7 @@
 	width: 200px;
 }
 .arrow-direction {
-	background-color: lightgrey !important;
+	background-color: grey !important;
 	width : 20px;
 	height: 20px;
 	margin-top: 300px;
@@ -32,7 +32,7 @@
 	height: 50px;
 	color: #00277e;
 	background-color: #F9E225;
-	border-radius: 20px;
+	border-radius: 100px;
 	font-weight: bold;
   	// border: 3px solid yellow;
 	text-align: center;
@@ -65,8 +65,8 @@
 .indicateurData{
 	height: 50px;
 	width: 250px !important;
-	color: white;
-	background-color:lightseagreen;
+	color: black;
+	background-color:rgb(163, 241, 238);
 	border-radius: 10px;
 	font-weight: bold;
 	margin-top: 20px;
