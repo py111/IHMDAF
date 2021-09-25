@@ -1,4 +1,4 @@
-// Here you can add other styles
+
 .lpmLogo {
 	height: 60px;
 	width: 100px;
@@ -7,8 +7,10 @@
 	height: 100px;
 	width: 200px;
 }
+.carousel {
+	margin-top: 20px
+}
 .arrow-direction {
-	background-color: lightgrey !important;
 	width : 20px;
 	height: 20px;
 	margin-top: 300px;
@@ -20,9 +22,15 @@
 		margin-right: 40px;
 	}
 }
+.carousel-control-prev-icon {
+	filter: invert(1) !important;
+}
+.carousel-control-next-icon {
+	filter: invert(1) !important;
+}
+
 .header{
 	color: #00277e;
-	// background-color: #00277e;
 	font-weight: bold;
 	text-align: left;
 	border-radius: 10px;
@@ -34,39 +42,33 @@
 	background-color: #F9E225;
 	border-radius: 20px;
 	font-weight: bold;
-  	// border: 3px solid yellow;
 	text-align: center;
 	font-family: Arial, sans-serif;
 
 	&-text{
 		font-size: 20px;
-    	position: absolute;
-    	right: 35%;
-    	top: 10%;
+    	position: relative;
+    	top: 18%;
+		text-align: center;
 	}
 
 	&-img{
 		height: 50px !important;
     	width: 40px !important;
     	position: absolute;
-    	left: 90%;
+    	left: 85%;
 	}
 }
 .indicateurBody{
 	height: 500px;
 	width: 50px;
 	background-color: white;
-	// border-right: 2px solid #F9E225;
-	// border-left: 2px solid #F9E225;
-	// border-bottom: 2px solid blue;
-	// border-bottom-left-radius: 10px;
-	// border-bottom-right-radius: 10px;
 }
 .indicateurData{
-	height: 50px;
-	width: 250px !important;
-	color: white;
-	background-color:lightseagreen;
+	height: auto;
+	width: 300px !important;
+	color: black;
+	background-color:rgb(166, 245, 241);
 	border-radius: 10px;
 	font-weight: bold;
 	margin-top: 20px;

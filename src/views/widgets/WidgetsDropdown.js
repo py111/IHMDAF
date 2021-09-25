@@ -3,14 +3,10 @@ import {
   CWidgetDropdown,
   CRow,
   CCol,
-  CDropdown,
-  CDropdownMenu,
-  CDropdownItem,
-  CDropdownToggle
 } from '@coreui/react'
-import CIcon from '@coreui/icons-react'
-import ChartLineSimple from '../charts/ChartLineSimple'
-import ChartBarSimple from '../charts/ChartBarSimple'
+// import CIcon from '@coreui/icons-react'
+// import ChartLineSimple from '../charts/ChartLineSimple'
+// import ChartBarSimple from '../charts/ChartBarSimple'
 
 const WidgetsDropdown = () => {
   // render
@@ -80,7 +76,7 @@ const WidgetsDropdown = () => {
       </CCol>
 
       <CCol sm="6" lg="3">
-        <CWidgetDropdown className = "card-appli" className = "card-appli"
+        <CWidgetDropdown className = "card-appli"
           color="gradient-warning"
           // header="9.823"
           text = ""

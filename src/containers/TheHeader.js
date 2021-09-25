@@ -1,18 +1,14 @@
 import React from 'react'
-import { useSelector, useDispatch } from 'react-redux'
+// import { useSelector, useDispatch } from 'react-redux'
 import {
   CHeader,
-  CToggler,
   CHeaderBrand,
   CHeaderNav,
-  CSubheader,
-  CBreadcrumbRouter,
   CImg,
 } from '@coreui/react'
-import CIcon from '@coreui/icons-react'
 
 // routes config
-import routes from '../routes'
+// import routes from '../routes'
 
 import { 
   // TheHeaderDropdown,
@@ -22,18 +18,18 @@ import {
 }  from './index'
 
 const TheHeader = () => {
-  const dispatch = useDispatch()
-  const sidebarShow = useSelector(state => state.sidebarShow)
+  // const dispatch = useDispatch()
+  // const sidebarShow = useSelector(state => state.sidebarShow)
 
-  const toggleSidebar = () => {
-    const val = [true, 'responsive'].includes(sidebarShow) ? false : 'responsive'
-    dispatch({type: 'set', sidebarShow: val})
-  }
+  // const toggleSidebar = () => {
+  //   const val = [true, 'responsive'].includes(sidebarShow) ? false : 'responsive'
+  //   dispatch({type: 'set', sidebarShow: val})
+  // }
 
-  const toggleSidebarMobile = () => {
-    const val = [false, 'responsive'].includes(sidebarShow) ? true : 'responsive'
-    dispatch({type: 'set', sidebarShow: val})
-  }
+  // const toggleSidebarMobile = () => {
+  //   const val = [false, 'responsive'].includes(sidebarShow) ? true : 'responsive'
+  //   dispatch({type: 'set', sidebarShow: val})
+  // }
 
   return (
     <CHeader className="badgeColor-headerbackGround" withSubheader>
