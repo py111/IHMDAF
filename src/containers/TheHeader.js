@@ -67,7 +67,7 @@ const TheHeader = () => {
         {/* <TheHeaderDropdown/> */}
       </CHeaderNav>
       <CImg src="avatars/Logo-LPM.png" alt="" className="lpmLogo"/>
-      <div className ="badgeColor-headerTitle"> IHM DAF</div>
+      <div className ="badgeColor-headerTitle"> DAF BOARD</div>
       {/* <CBreadcrumbRouter 
           className="border-0 c-subheader-nav m-0 px-0 px-md-3" 
           routes={routes} 

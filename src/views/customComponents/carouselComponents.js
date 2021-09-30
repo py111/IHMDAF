@@ -21,7 +21,7 @@ const CarouselComponents = (props) => {
   return (
     <CCol sm={12}>
     <CRow>
-      <CCol sm="12" className="header"> Dans l'application : BSCS {applicationIndex}</CCol>
+      <CCol sm="12" className="header"> BSCS {applicationIndex}</CCol>
     </CRow>
     <CRow>
     </CRow>
@@ -33,8 +33,9 @@ const CarouselComponents = (props) => {
                     <CRow>
                         <CCol lg="4" className="indicateurHeader" >
                             <span className="indicateurHeader-text" >FACTURATION</span> 
-                            <CIcon name="cil-calculator" alt="" className="indicateurHeader-img"/></CCol>                      
-                        <CCol md="4" className="indicateurHeader"><span className="indicateurHeader-text"> PAIEMENT </span>
+                            <CIcon name="cil-calculator" alt="" className="indicateurHeader-img"/></CCol>                   
+                        <CCol md="4" className="indicateurHeader">
+                            <span className="indicateurHeader-text"> PAIEMENT </span>
                             <CIcon name="cil-euro" alt="" className="indicateurHeader-img"/></CCol>
                         <CCol sm="4" className="indicateurHeader"><span className="indicateurHeader-text"> CHORUS  </span>
                             <CIcon name="cil-graph" alt="" className="indicateurHeader-img"/></CCol>

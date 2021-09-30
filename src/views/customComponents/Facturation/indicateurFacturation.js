@@ -16,11 +16,11 @@ const IndicateurFacturation = (props) => {
         const facturationStartDescription = {
           dernierJJ: "Dernier JJ :",
           nbClientsFactures: "Nombre des clients facturés :",
-          sumMontantFactures: "Montant facturés :",
+          sumMontantFactures: "Montant facturé :",
           variationNbClients: "Variation M-1 en NB Clients :",
           variationMontantClients: "Variation M-1 en Montant Clients :",
-          montantMoyenFactures: "Montant Moyen Facturés :",
-          variationMontantMoyenFactures: "Variation du montant moyen facturés en % :",
+          montantMoyenFactures: "Montant Moyen Facturé :",
+          variationMontantMoyenFactures: "Variation du montant moyen facturé en % :",
           nbClientsJJ55: "Nombre de clients sur JJ 55 :"
          };
          const facturationEndDescription = {
@@ -73,11 +73,11 @@ const IndicateurFacturation = (props) => {
          const facturationEndDescription = {
           dernierJJ: "Dernier JJ :",
           nbClientsFactures: "Nombre des clients facturés :",
-          sumMontantFactures: "Montant facturés :",
+          sumMontantFactures: "Montant facturé :",
           variationNbClients: "Variation M-1 en NB Clients :",
           variationMontantClients: "Variation M-1 en Montant Clients :",
-          montantMoyenFactures: "Montant Moyen Facturés :",
-          variationMontantMoyenFactures: "Variation du montant moyen facturés en % :",
+          montantMoyenFactures: "Montant Moyen Facturé :",
+          variationMontantMoyenFactures: "Variation du montant moyen facturé en % :",
           nbClientsJJ55: "Nombre de clients sur JJ 55 :"
          };
          const facturationFlag = {
