@@ -59,6 +59,11 @@
     	left: 85%;
 	}
 }
+.alertFeature{
+	font-size: 15px;
+	height: auto;
+	width: auto;
+}
 .indicateurBody{
 	height: 500px;
 	width: 50px;
@@ -66,13 +71,20 @@
 }
 .indicateurData{
 	height: auto;
-	width: 360px !important;
+	width: 450px !important;
 	color: black;
-	background-color: rgb(185, 184, 184);
+	background-color: rgb(235, 232, 232);
 	border-radius: 6px;
 	font-weight: bold;
 	margin-top: 20px;
 	font-family: Arial, sans-serif;
+}
+indicateurtable{
+	height: auto;
+	width: auto;
+	margin-top: 20px;
+	border:1;
+	padding:10;
 }
 .application-dropdown{
 	float: right;
@@ -81,7 +93,10 @@
 	font-weight: bold;
 }
 .m-1{
-	height: 50px;
+	height: 5px;
+}
+.news {
+    width: 160px
 }
 .badgeColor{
 	&-OK{

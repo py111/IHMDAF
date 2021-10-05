@@ -15,10 +15,11 @@ const Indicateur = (props) => {
     nbClientsFactures: 145,
     sumMontantFactures: 25,
     variationNbClients: 400,
-    variationMontantClients: 63,
+    variationMontantClients: -63,
     montantMoyenFactures: 21,
     variationMontantMoyenFactures: -257,
-    nbClientsJJ55: 32
+    nbClientsJJ55: 32,
+    dateRafraichissement: "2021-02-02"
    };
     
   useEffect(() => {
@@ -55,7 +56,8 @@ const Indicateur = (props) => {
     <Fragment>
         {
           Object.keys(startDescription).map((key, index) => {
-            return (<CCol className="indicateurData"> {startDescription[key]} <span className={badgeColor[key]}> {facturation[key]} {endDescription[key]} </span></CCol>)
+            return (<CCol className="indicateurData"> {startDescription[key]} 
+              <span className={badgeColor[key]}> {facturation[key]} {endDescription[key]} </span></CCol>)
           })
         }
     </Fragment>

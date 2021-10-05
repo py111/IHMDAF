@@ -1,3 +1,4 @@
+import { CRow } from '@coreui/react';
 import React, { Fragment, useEffect, useState } from 'react'
 import Indicateur from '../indicateur'
 
@@ -21,7 +22,8 @@ const IndicateurFacturation = (props) => {
           variationMontantClients: "Variation M-1 en Montant Clients :",
           montantMoyenFactures: "Montant Moyen Facturé :",
           variationMontantMoyenFactures: "Variation du montant moyen facturé en % :",
-          nbClientsJJ55: "Nombre de clients sur JJ 55 :"
+          nbClientsJJ55: "Nombre de clients sur JJ 55 :",
+          dateRafraichissement: "Date du dernier rafraichissement :"
          };
          const facturationEndDescription = {
           dernierJJ: "",
@@ -30,8 +32,9 @@ const IndicateurFacturation = (props) => {
           variationNbClients: "clients",
           variationMontantClients: "€",
           montantMoyenFactures: "",
-          variationMontantMoyenFactures: "€",
-          nbClientsJJ55: ""
+          variationMontantMoyenFactures: "%",
+          nbClientsJJ55: "",
+          dateRafraichissement: ""
          };
          const facturationFlag = {
           dernierJJ: "info",
@@ -41,7 +44,8 @@ const IndicateurFacturation = (props) => {
           variationMontantClients: "value",
           montantMoyenFactures: "info",
           variationMontantMoyenFactures: "value",
-          nbClientsJJ55: "info"
+          nbClientsJJ55: "info",
+          dateRafraichissement: "info"
          };
          setUrl("http://devbscs2:9000/fact");
          setFlag({...facturationFlag})
@@ -63,22 +67,24 @@ const IndicateurFacturation = (props) => {
         const facturationStartDescription = {
           dernierJJ: "Dernier JJ :",
           nbClientsFactures: "Nombre des clients facturés :",
-          sumMontantFactures: "Montant facturés :",
-          variationNbClients: "Variation M-1 en NB Clients :",
-          variationMontantClients: "Variation M-1 en Montant Clients :",
-          montantMoyenFactures: "Montant Moyen Facturés :",
-          variationMontantMoyenFactures: "Variation du montant moyen facturés en % :",
-          nbClientsJJ55: "Nombre de clients sur JJ 55 :"
-         };
-         const facturationEndDescription = {
-          dernierJJ: "Dernier JJ :",
-          nbClientsFactures: "Nombre des clients facturés :",
           sumMontantFactures: "Montant facturé :",
           variationNbClients: "Variation M-1 en NB Clients :",
           variationMontantClients: "Variation M-1 en Montant Clients :",
           montantMoyenFactures: "Montant Moyen Facturé :",
           variationMontantMoyenFactures: "Variation du montant moyen facturé en % :",
-          nbClientsJJ55: "Nombre de clients sur JJ 55 :"
+          nbClientsJJ55: "Nombre de clients sur JJ 55 :",
+          dateRafraichissement: "Date du dernier rafraichissement :"
+         };
+         const facturationEndDescription = {
+          dernierJJ: "",
+          nbClientsFactures: "clients",
+          sumMontantFactures: "€",
+          variationNbClients: "clients",
+          variationMontantClients: "€",
+          montantMoyenFactures: "",
+          variationMontantMoyenFactures: "%",
+          nbClientsJJ55: "",
+          dateRafraichissement: ""
          };
          const facturationFlag = {
           dernierJJ: "info",
@@ -88,7 +94,8 @@ const IndicateurFacturation = (props) => {
           variationMontantClients: "value",
           montantMoyenFactures: "info",
           variationMontantMoyenFactures: "value",
-          nbClientsJJ55: "info"
+          nbClientsJJ55: "info",
+          dateRafraichissement: "info"
          };
          setUrl("");
          setFlag({...facturationFlag})
