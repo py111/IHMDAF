@@ -1,6 +1,6 @@
 import React, { useState, useEffect, Fragment } from 'react'
 import {
-  CCol
+  CCol, CRow
 } from '@coreui/react'
 // const axios = require("axios");
 
@@ -54,12 +54,16 @@ const Indicateur = (props) => {
 
   return (
     <Fragment>
-        {
+      <CRow>
+        { 
           Object.keys(startDescription).map((key, index) => {
-            return (<CCol className="indicateurData"> {startDescription[key]} 
-              <span className={badgeColor[key]}> {facturation[key]} {endDescription[key]} </span></CCol>)
-          })
+              return (
+                <CCol md="5" className="indicateurData"> {startDescription[key]} 
+                  <span className={badgeColor[key]}> {facturation[key]} {endDescription[key]}</span>
+                </CCol>
+            )})
         }
+      </CRow>  
     </Fragment>
   )
 }

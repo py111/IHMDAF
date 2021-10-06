@@ -1,4 +1,3 @@
-import { CRow } from '@coreui/react';
 import React, { Fragment, useEffect, useState } from 'react'
 import Indicateur from '../indicateur'
 

@@ -4,21 +4,16 @@
     CDropdownItem,
     CDropdownToggle,
     CDropdownMenu,
-    CAlert
   } from '@coreui/react'
   import CarouselComponents from '../customComponents/carouselComponents'
+  import Toaster from '../notifications/toaster/Toaster'
 
   const Dashboard = () => {
     const [applicationIndex, setApplicationIndex] = useState("R1")
     return (
     <>
     <div>
-    <CAlert color="primary" className="alertFeature" dismissible>
-      This is info alert.This is info alert.
-      This is info alert.This is info alert.
-      This is info alert.This is info alert.
-      This is info alert.This is info alert.
-    </CAlert>
+    <Toaster/>
   </div>
     <CDropdown className="m-1">
       <CDropdownToggle className="application-dropdown"> Applications </CDropdownToggle>
