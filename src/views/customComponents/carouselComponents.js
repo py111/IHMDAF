@@ -76,5 +76,4 @@ const CarouselComponents = (props) => {
     </CCol>
   )
 }
-
 export default CarouselComponents

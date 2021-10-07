@@ -22,21 +22,11 @@ import { DocsLink } from 'src/reusable'
 const Toaster = () => {
 
   const positions = [
-    'static',
-    'top-left',
-    'top-center',
-    'top-right',
-    'top-full',
-    'bottom-left',
-    'bottom-center',
-    'bottom-right',
-    'bottom-full'
+    'top-right'
   ]
 
   const [toasts, setToasts] = useState([
-    { position: 'static'},
-    { position: 'static'},
-    { position: 'top-right', autohide: 3000 }
+    { position: 'top-right', autohide: 5000 }
   ])
 
   const [position, setPosition] = useState('top-right')
@@ -64,14 +54,14 @@ const Toaster = () => {
 
   return (
     <CCard>
-      <CCardHeader>
+      {/* <CCardHeader>
         Toasts.
         <DocsLink name="-Toast"/>
-      </CCardHeader>
-      <CCardBody>
+      </CCardHeader> */}
+      {/* <CCardBody> */}
         <CContainer>
           <CRow>
-            <CCol sm="12" lg="6">
+            {/* <CCol sm="12" lg="6">
               <CForm>
                 <h5>Add toast with following props:</h5>
 
@@ -146,7 +136,7 @@ const Toaster = () => {
                 </CButton>
 
               </CForm>
-            </CCol>
+            </CCol> */}
             <CCol sm="12" lg="6">
               {Object.keys(toasters).map((toasterKey) => (
                 <CToaster
@@ -163,10 +153,11 @@ const Toaster = () => {
                         fade={toast.fade}
                       >
                         <CToastHeader closeButton={toast.closeButton}>
-                          Toast title
+                          DAF Information
                         </CToastHeader>
                         <CToastBody>
-                          {`This is a toast in ${toasterKey} positioned toaster number ${key + 1}.`}
+                          {/* {`This is a toast in ${toasterKey} positioned toaster number ${key + 1}.`} */}
+                          Data Refreshed 
                         </CToastBody>
                       </CToast>
                     )
@@ -177,7 +168,7 @@ const Toaster = () => {
             </CCol>
           </CRow>
         </CContainer>
-      </CCardBody>
+      {/* </CCardBody> */}
     </CCard>
   )
 }
