@@ -1,46 +1,38 @@
 import React, { useState } from 'react'
 import {
   CCard,
-  CCardHeader,
-  CCardBody,
   CToast,
   CToastBody,
   CToastHeader,
   CToaster,
-  CForm,
-  CInput,
-  CInputCheckbox,
-  CButton,
   CContainer,
   CRow,
-  CCol,
-  CFormGroup,
-  CLabel
+  CCol
 } from '@coreui/react'
-import { DocsLink } from 'src/reusable'
+// import { DocsLink } from 'src/reusable'
 
 const Toaster = () => {
 
-  const positions = [
-    'top-right'
-  ]
+  // const positions = [
+  //   'top-right'
+  // ]
 
   const [toasts, setToasts] = useState([
     { position: 'top-right', autohide: 5000 }
   ])
 
-  const [position, setPosition] = useState('top-right')
-  const [autohide, setAutohide] = useState(true)
-  const [autohideValue, setAutohideValue] = useState(5000)
-  const [closeButton, setCloseButton] = useState(true)
-  const [fade, setFade] = useState(true)
+  // const [position, setPosition] = useState('top-right')
+  // const [autohide, setAutohide] = useState(true)
+  // const [autohideValue, setAutohideValue] = useState(5000)
+  // const [closeButton, setCloseButton] = useState(true)
+  // const [fade, setFade] = useState(true)
 
-  const addToast = () => {
-    setToasts([
-      ...toasts, 
-      { position, autohide: autohide && autohideValue, closeButton, fade }
-    ])
-  }
+  // const addToast = () => {
+  //   setToasts([
+  //     ...toasts, 
+  //     { position, autohide: autohide && autohideValue, closeButton, fade }
+  //   ])
+  // }
 
 
   const toasters = (()=>{
@@ -156,7 +148,6 @@ const Toaster = () => {
                           DAF Information
                         </CToastHeader>
                         <CToastBody>
-                          {/* {`This is a toast in ${toasterKey} positioned toaster number ${key + 1}.`} */}
                           Data Refreshed 
                         </CToastBody>
                       </CToast>

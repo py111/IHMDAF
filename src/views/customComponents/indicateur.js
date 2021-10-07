@@ -2,34 +2,34 @@ import React, { useState, useEffect, Fragment } from 'react'
 import {
   CCol, CRow
 } from '@coreui/react'
-// const axios = require("axios");
+const axios = require("axios");
 
 
 const Indicateur = (props) => {
 
   const { startDescription, endDescription, url, flag } = props; 
-  // const [facturation, setFacturation] = useState({});
+  const [facturation, setFacturation] = useState({});
   const [badgeColor, setBadgeColor] = useState({});
-  const facturation = {
-    dernierJJ: 69,
-    nbClientsFactures: 145,
-    sumMontantFactures: 25,
-    variationNbClients: 400,
-    variationMontantClients: -63,
-    montantMoyenFactures: 21,
-    variationMontantMoyenFactures: -257,
-    nbClientsJJ55: 32,
-    dateRafraichissement: "2021-02-02"
-   };
+  // const facturation = {
+  //   dernierJJ: 69,
+  //   nbClientsFactures: 145,
+  //   sumMontantFactures: 25,
+  //   variationNbClients: 400,
+  //   variationMontantClients: -63,
+  //   montantMoyenFactures: 21,
+  //   variationMontantMoyenFactures: -257,
+  //   nbClientsJJ55: 32,
+  //   dateRafraichissement: "2021-02-02"
+  //  };
     
   useEffect(() => {
-    // axios.get(url)
-    // .then((res) => {
-    //   setFacturation(res.data);
-    // })
-    // .catch((error) => {
-    //   console.error("Error", error);
-    // });
+    axios.get(url)
+    .then((res) => {
+      setFacturation(res.data);
+    })
+    .catch((error) => {
+      console.error("Error", error);
+    });
     Object.keys(facturation).forEach((key, index) => {
       if(flag[key] === "info") {
         badgeColor[key] = 'badgeColor-Info';
@@ -47,10 +47,8 @@ const Indicateur = (props) => {
         badgeColor[key] = 'badgeColor-Warning';
         setBadgeColor({ ...badgeColor });
       }
-      //add more conditions
     });
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [flag]); // Empty array of dependency makes it equivalent to componentDidMount
+  }, [flag, facturation]); 
 
   return (
     <Fragment>
