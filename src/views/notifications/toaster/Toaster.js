@@ -11,7 +11,7 @@ import {
 } from '@coreui/react'
 // import { DocsLink } from 'src/reusable'
 
-const Toaster = () => {
+const  Toaster = () => {
 
   // const positions = [
   //   'top-right'
@@ -45,7 +45,7 @@ const Toaster = () => {
 
 
   return (
-    <CCard>
+    <CCard className="toaster-card">
       {/* <CCardHeader>
         Toasts.
         <DocsLink name="-Toast"/>

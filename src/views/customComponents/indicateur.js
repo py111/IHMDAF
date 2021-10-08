@@ -48,7 +48,7 @@ const Indicateur = (props) => {
         setBadgeColor({ ...badgeColor });
       }
     });
-  }, [flag, facturation]); 
+  }, [flag,facturation]); 
 
   return (
     <Fragment>
@@ -56,7 +56,7 @@ const Indicateur = (props) => {
         { 
           Object.keys(startDescription).map((key, index) => {
               return (
-                <CCol md="5" className="indicateurData"> {startDescription[key]} 
+                <CCol md="5" className="indicateurData" key={startDescription[key]}> {startDescription[key]} 
                   <span className={badgeColor[key]}> {facturation[key]} {endDescription[key]}</span>
                 </CCol>
             )})
