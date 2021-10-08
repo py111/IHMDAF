@@ -26,7 +26,7 @@
             </CDropdownMenu> 
         </CCol>   
       </CRow>
-    </CDropdown>   
+    </CDropdown> 
     <CarouselComponents applicationIndex={applicationIndex}/>
     </>
     )

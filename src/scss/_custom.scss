@@ -28,7 +28,11 @@
 .carousel-control-next-icon {
 	filter: invert(1) !important;
 }
-
+.height {
+	&-30 {
+		height: 30px;
+	}	
+}
 .toaster-card {
 	border: 0px !important;
 }
@@ -99,7 +103,7 @@
 	font-weight: bold;
 }
 .m-1{
-	height: 5px;
+	height: 30px;
 }
 .news {
     width: 160px

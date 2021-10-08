@@ -20,9 +20,6 @@ const CarouselComponents = (props) => {
 
   return (
     <CCol sm={12}>
-    {/* <CRow>
-      <CCol sm="12" className="header"> BSCS {applicationIndex}</CCol>
-    </CRow> */}
     <CRow>
     </CRow>
     <CCarousel activeIndex={activeIndex} className="carousel">
