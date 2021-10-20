@@ -51,7 +51,7 @@
 	border-radius: 50px;
 	font-weight: bold;
 	text-align: center;
-	font-family: Arial, sans-serif;
+	font-family: Verdana;
 
 	&-text{
 		font-size: 20px;
@@ -85,9 +85,10 @@
 	border-radius: 6px;
 	font-weight: bold;
 	margin-top: 20px;
-	font-family: Arial, sans-serif;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
 	margin-right: 20px;
-	margin-left: 10px
+	margin-left: 10px;
+	padding: 8px;
 }
 .indicateurtable{
 	height: auto;
