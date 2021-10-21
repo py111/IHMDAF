@@ -11,7 +11,7 @@ const Indicateur = (props) => {
   const { startDescription, endDescription, url, flag } = props; 
   const [facturation, setFacturation] = useState({});
   const [badgeColor, setBadgeColor] = useState({});
-  var formats = ["YYYY-MM-DD LT","YYYY-MM-DD h:mm:ss A","YYYY-MM-DD HH:mm:ss","YYYY-MM-DD HH:mm", "yyyy-MM-dd HH:mm:ss.S"];
+  var formats = ["YYYY-MM-DD LT","YYYY-MM-DD h:mm:ss A","YYYY-MM-DD HH:mm:ss","YYYY-MM-DD HH:mm", "YYYY-MM-DD HH:mm:ss.S"];
 
   // const facturation = {
   //   dernierJJ: 69,
@@ -81,7 +81,7 @@ const Indicateur = (props) => {
           if(moment(facturation[key], formats, true).isValid())
             return (
               <CCol md="5" className="indicateurData" key={startDescription[key]}> {startDescription[key]} 
-                <span className={badgeColor[key]}> moment(facturation[key]).format('DD/MM/YYYY HH:mm:ss') {endDescription[key]}</span>
+                <span className={badgeColor[key]}> {moment(facturation[key]).format('DD/MM/YYYY HH:mm:ss')} {endDescription[key]}</span>
               </CCol>
              )
           else

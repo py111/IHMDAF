@@ -46,7 +46,7 @@ const IndicateurFacturation = (props) => {
           nbClientsJJ55: "info",
           dateRafraichissement: "info"
          };
-         setUrl("http://devbscs2:9000/fact");
+         setUrl("http://rctsat2:9000/fact");
          setFlag({...facturationFlag})
          setStartDescription({ ...facturationStartDescription });
          setEndDescription({ ...facturationEndDescription });
@@ -56,7 +56,7 @@ const IndicateurFacturation = (props) => {
         const facturationStartDescription = {};
         const facturationEndDescription = {};
         const facturationFlag = {};
-        setUrl("http://devbscs2:9000/fact");
+        setUrl("http://rctsat2:9000/fact");
         setFlag({...facturationFlag})
         setStartDescription({ ...facturationStartDescription });
         setEndDescription({ ...facturationEndDescription });
@@ -96,7 +96,7 @@ const IndicateurFacturation = (props) => {
           nbClientsJJ55: "info",
           dateRafraichissement: "info"
          };
-         setUrl("http://devbscs2:9000/fact");
+         setUrl("http://rctsat2:9000/fact");
          setFlag({...facturationFlag})
          setStartDescription({ ...facturationStartDescription });
          setEndDescription({ ...facturationEndDescription });
