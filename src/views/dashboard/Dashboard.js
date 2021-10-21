@@ -1,11 +1,8 @@
   import React, { useState } from 'react'
   import {
-    CDropdown,
-    CDropdownItem,
-    CDropdownToggle,
-    CDropdownMenu,
     CRow,
-    CCol
+    CCol,
+    CSwitch
   } from '@coreui/react'
   import CarouselComponents from '../customComponents/carouselComponents'
   import Toaster from '../notifications/toaster/Toaster'
@@ -15,18 +12,31 @@
     return (
     <>
     <Toaster/>
-    <CDropdown className="m-1">
-      <CRow>
-        <CCol sm="6" className="header"> BSCS {applicationIndex}</CCol>
-        <CCol>
-          <CDropdownToggle className="application-dropdown"> Applications </CDropdownToggle>
-            <CDropdownMenu placement="bottom" >
-              <CDropdownItem onClick={() => setApplicationIndex("R1")}>R1</CDropdownItem>
-              <CDropdownItem onClick={() => setApplicationIndex("R17")}>R17</CDropdownItem>
-            </CDropdownMenu> 
-        </CCol>   
-      </CRow>
-    </CDropdown> 
+    <CRow>
+      <CCol sm="6" className="header"> BSCS {applicationIndex}</CCol>
+      <CCol>
+        <div className="application-dropdown">
+          <span>R1</span>
+          <CSwitch
+            className='application-switch'
+            id="Appswitch"
+            key='Appswitch'
+            color='primary'
+            value='1'
+            variant='opposite'
+            onChange={()=> {
+              if (document.getElementById('Appswitch').checked) { 
+                setApplicationIndex("R17")
+              }
+              else {
+                setApplicationIndex("R1")
+              }
+            }}
+          />
+          <span>R17</span>
+        </div>
+      </CCol>   
+    </CRow>
     <CarouselComponents applicationIndex={applicationIndex}/>
     </>
     )
